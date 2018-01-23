@@ -115,19 +115,19 @@ body {
   transition: all .5s;
 }
 .btn-primary.btn-outline {
-  color: #428bca;
+  color: #94142e;
 }
 .btn-success.btn-outline {
-  color: #5cb85c;
+  color: #4a90e2;
 }
 .btn-info.btn-outline {
-  color: #5bc0de;
+  color: #2ecc71;
 }
 .btn-warning.btn-outline {
   color: #f0ad4e;
 }
 .btn-danger.btn-outline {
-  color: #d9534f;
+  color: #cc0033;
 }
 .btn-primary.btn-outline:hover,
 .btn-success.btn-outline:hover,
@@ -235,32 +235,32 @@ table.dataTable thead .sorting:after {
   font-size: 40px;
 }
 .panel-green {
-  border-color: #5cb85c;
+  border-color: #4a90e2;
 }
 .panel-green .panel-heading {
-  border-color: #5cb85c;
+  border-color: #4a90e2;
   color: white;
-  background-color: #5cb85c;
+  background-color: #4a90e2;
 }
 .panel-green a {
-  color: #5cb85c;
+  color: #4a90e2;
 }
 .panel-green a:hover {
-  color: #3d8b3d;
+  color: #1f69c1;
 }
 .panel-red {
-  border-color: #d9534f;
+  border-color: #cc0033;
 }
 .panel-red .panel-heading {
-  border-color: #d9534f;
+  border-color: #cc0033;
   color: white;
-  background-color: #d9534f;
+  background-color: #cc0033;
 }
 .panel-red a {
-  color: #d9534f;
+  color: #cc0033;
 }
 .panel-red a:hover {
-  color: #b52b27;
+  color: #800020;
 }
 .panel-yellow {
   border-color: #f0ad4e;
