@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Nacional Monte de Piedad - Salida de Prendas</title>
+    <title>Nacional Monte de Piedad - Carga partidas</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,12 +43,7 @@
         }
 
         p{
-            padding-top: 6px;
-            margin: 0;
-        }
-
-        table{
-            margin-top: 20px;
+            padding-left: 15px;
         }
 
         th, td{
@@ -116,17 +111,17 @@
                         </li>
 
                         <!--  Menú de Partidas  -->
-                        <li>
+                        <li  class="active">
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Partidas<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../partidas/carga_partidas.html">Cargar Partidas</a>
+                                    <a class="active" href="./carga_partidas.html">Cargar Partidas</a>
                                 </li>
                                 <li>
-                                    <a href="../partidas/validacion_archivo.html">Validación Partidas</a>
+                                    <a href="./validacion_archivo.html">Validación Partidas</a>
                                 </li>
                                 <li>
-                                    <a href="../partidas/salida_partidas.html">Salida de Partidas</a>
+                                    <a href="./salida_partidas.html">Salida de Partidas</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -136,22 +131,22 @@
                         <li class="active">
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Auditoría<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
+                                <li class="active">
                                     <a href="#">Física<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="fisica-caja-abierta.html">Caja Abierta</a>
+                                            <a href="../auditoria/fisica-caja-abierta.html">Caja Abierta</a>
                                         </li>
                                         <li>
-                                            <a href="fisica-caja-cerrada.html">Caja Cerrada</a>
+                                            <a href="../auditoria/fisica-caja-cerrada.html">Caja Cerrada</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="fotografia.html">Fotografía</a>
+                                    <a href="../auditoria/fotografia.html">Fotografía</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="salida-prendas.html">Salida de Prendas</a>
+                                    <a href="../auditoria/salida-prendas.html">Salida de Prendas</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -163,7 +158,7 @@
             <!-- /.navbar-static-side -->
             <div class="downbar">
                 <div class="downbar-text">
-                    <h3><b>Auditoría</b></h3>
+                    <h3><b>Partidas</b></h3>
                 </div>
             
             </div>
@@ -172,96 +167,63 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Salida de prendas del depósito por Auditoría</h1>
+                    <h1 class="page-header">Carga revisión auditoría fotográfica  SAR</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
 
-            <!-- Criterios de Búsqueda -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <form action="?">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Criterios de Búsqueda
-                            </div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                            <div class="form-group row">
-                                                <label for="caja" class="col-sm-4 col-form-label">Número de caja:</label>
-                                                <div class="col-sm-8">
-                                                    <input type="text" class="form-control" id="caja" placeholder="123125">
-                                                </div>
-                                            </div>
-                                    </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre del archivo</th>
+                            <th>Sucursal</th>
+                            <th>Creador</th>
+                            <th>Partidas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#">xxxx.xls</a>
+                            </td>
+                            <td>0</td>
+                            <td>Juan Morales</td>
+                            <td>890</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">xxxx.xls</a>
+                            </td>
+                            <td>0</td>
+                            <td>Juan Morales</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">xxxx.xls</a>
+                            </td>
+                            <td>360</td>
+                            <td>Pedro López</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">xxxx.xls</a>
+                            </td>
+                            <td>420</td>
+                            <td>Juana Pérez</td>
+                            <td>300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>    
+            <div class="row" >
+                <button class="btn btn-danger pull-right" style="margin: 5px;">Eliminar</button>
+                <button class="btn btn-success pull-right" style="margin: 5px;">Cargar</button>
+            </div>     
 
-                                    <div class="col-lg-6">
-                                            <div class="form-group row">
-                                                <label for="partida" class="col-sm-4 col-form-label">Número de partida:</label>
-                                                <div class="col-sm-8">
-                                                    <input type="text" class="form-control" id="partida" placeholder="6874560982">
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-footer">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p>Pendientes de salida: 5</p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="pull-right">                                    
-                                            <button type="button" class="btn btn-success btn-outline">Actualizar</button>
-                                            <button type="button" class="btn btn-success btn-outline">Imprimir lista</button>
-                                            <button type="button" class="btn btn-primary">Ejecutar salida</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Caja</th>
-                                    <th>Partida</th>
-                                    <th>Descripción</th>
-                                    <th>Fecha de salida</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>123125</td>
-                                    <td>5345366</td>
-                                    <td>Aretes de oro</td>
-                                    <td>20/04/2017</td>
-                                </tr>
-                                <tr>
-                                    <td>123123</td>
-                                    <td>5345634</td>
-                                    <td>Esclava de plata paladio</td>
-                                    <td>20/04/2017</td>
-                                </tr>
-                                <tr>
-                                    <td>122368</td>
-                                    <td>5345437</td>
-                                    <td>Centenario</td>
-                                    <td>20/04/2017</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!-- /#page-wrapper -->
 
