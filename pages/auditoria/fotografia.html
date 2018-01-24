@@ -43,7 +43,8 @@
         }
 
         p{
-            padding-left: 15px;
+            padding-top: 6px;
+            margin: 0;
         }
 
         th, td{
@@ -175,30 +176,38 @@
             <!-- Criterios de Búsqueda -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Criterios de Búsqueda
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <form action="?">
-                                        <div class="form-group row">
-                                            <label for="partida" class="col-sm-3 col-md-2 col-form-label">Número de partida:</label>
-                                            <div class="col-sm-6 col-md-6">
-                                                <input type="text" class="form-control" id="partida" placeholder="6874560982">
+                    <form action="?">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Criterios de Búsqueda
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                            <div class="form-group row">
+                                                <label for="partida" class="col-sm-3 col-md-2 col-form-label">Número de partida:</label>
+                                                <div class="col-sm-6 col-md-6">
+                                                    <input type="text" class="form-control" id="partida" placeholder="6874560982">
+                                                </div>
                                             </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p>Partidas pendientes de validación: 4</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="pull-right">
                                             <button type="button" class="btn btn-primary">Buscar</button>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <p>Partidas pendientes de validación: 4</p>
+                                    </div>
+                                </div>                            
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
