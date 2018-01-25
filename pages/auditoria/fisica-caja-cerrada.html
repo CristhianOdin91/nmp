@@ -39,6 +39,7 @@
     <!-- Estilos temporales -->
     <style>
         label{
+            text-align: right;
             padding-top: 5px;
         }
 
@@ -49,6 +50,10 @@
 
         th, td{
             text-align: center;
+        }
+
+        label, p, table{
+            font-size: 12px;            
         }
     </style>
 
@@ -179,7 +184,7 @@
                     <form action="?">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Criterios de Búsqueda
+                                <p>Criterios de Búsqueda</p>
                             </div>
                             <div class="panel-body">
                                 <div class="row">
@@ -187,7 +192,7 @@
                                             <div class="form-group row">
                                                 <label for="caja" class="col-sm-4 col-form-label">Número de caja:</label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" class="form-control" id="caja" placeholder="123125">
+                                                    <input type="text" class="form-control input-sm" id="caja" placeholder="123125">
                                                 </div>
                                             </div>
                                     </div>
@@ -196,7 +201,7 @@
                                             <div class="form-group row">
                                                 <label for="partida" class="col-sm-4 col-form-label">Número de partida:</label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" class="form-control" id="partida" placeholder="6874560982">
+                                                    <input type="text" class="form-control input-sm" id="partida" placeholder="6874560982">
                                                 </div>
                                             </div>
                                     </div>
@@ -209,7 +214,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="pull-right">
-                                            <button type="button" class="btn btn-primary">Buscar</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Buscar</button>
                                         </div>
                                     </div>
                                 </div>                                
@@ -229,21 +234,21 @@
                                         <div class="form-group row">
                                             <label for="sucursal" class="col-sm-4 col-form-label">Número de sucursal:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="sucursal" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="sucursal" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="cliente" class="col-sm-4 col-form-label">Cliente:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="cliente" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="cliente" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="valuador" class="col-sm-4 col-form-label">Valuador:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="valuador" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="valuador" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -252,14 +257,14 @@
                                         <div class="form-group row">
                                             <label for="estado-prenda" class="col-sm-4 col-form-label">Estado de la prenda:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="estado-prenda" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="estado-prenda" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="caja" class="col-sm-4 col-form-label">Estado de la caja:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="caja" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="caja" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -279,49 +284,49 @@
                                         <div class="form-group row">
                                             <label for="subramo" class="col-sm-4 col-form-label">Subramo:</label>
                                             <div class="col-sm-8">
-                                                <select disabled="disabled" name="subramo" id="subramo" class="form-control"></select>
+                                                <select disabled="disabled" name="subramo" id="subramo" class="form-control input-sm"></select>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="metal" class="col-sm-4 col-form-label">Metal:</label>
                                             <div class="col-sm-8">
-                                                <select disabled="disabled" name="metal" id="metal" class="form-control"></select>
+                                                <select disabled="disabled" name="metal" id="metal" class="form-control input-sm"></select>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="kilates" class="col-sm-4 col-form-label">Kilates:</label>
                                             <div class="col-sm-8">
-                                                <select disabled="disabled" name="kilates" id="kilates" class="form-control"></select>
+                                                <select disabled="disabled" name="kilates" id="kilates" class="form-control input-sm"></select>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="rango" class="col-sm-4 col-form-label">Rango:</label>
                                             <div class="col-sm-8">
-                                                <select disabled="disabled" name="rango" id="rango" class="form-control"></select>
+                                                <select disabled="disabled" name="rango" id="rango" class="form-control input-sm"></select>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="deposito" class="col-sm-4 col-form-label">Número de depósito:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="text" class="form-control" id="deposito">
+                                                <input disabled="disabled" type="text" class="form-control input-sm" id="deposito">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="incremento" class="col-sm-4 col-form-label">Incremento:</label>
                                             <div class="col-sm-8">
-                                                <select disabled="disabled" name="incremento" id="incremento" class="form-control"></select>
+                                                <select disabled="disabled" name="incremento" id="incremento" class="form-control input-sm"></select>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="desplazamiento" class="col-sm-4 col-form-label">Desplazamiento comercial:</label>
                                             <div class="col-sm-8">
-                                                <select disabled="disabled" name="desplazamiento" id="desplazamiento" class="form-control"></select>
+                                                <select disabled="disabled" name="desplazamiento" id="desplazamiento" class="form-control input-sm"></select>
                                             </div>
                                         </div>
                                     </div>
@@ -329,49 +334,49 @@
                                         <div class="form-group row">
                                             <label for="gramaje" class="col-sm-4 col-form-label">Gramaje:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="number" class="form-control" id="gramaje">
+                                                <input disabled="disabled" type="number" class="form-control input-sm" id="gramaje">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="avaluo" class="col-sm-4 col-form-label">Avalúo complementario:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="number" class="form-control" id="avaluo">
+                                                <input disabled="disabled" type="number" class="form-control input-sm" id="avaluo">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="importe" class="col-sm-4 col-form-label">Importe gramo:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="text" class="form-control" id="importe">
+                                                <input disabled="disabled" type="text" class="form-control input-sm" id="importe">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="prestamo" class="col-sm-4 col-form-label">Préstamo autorizado:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="number" class="form-control" id="prestamo">
+                                                <input disabled="disabled" type="number" class="form-control input-sm" id="prestamo">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="costo" class="col-sm-4 col-form-label">Costo del metal:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="number" class="form-control" id="costo">
+                                                <input disabled="disabled" type="number" class="form-control input-sm" id="costo">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="valor-comercial" class="col-sm-4 col-form-label">Valor comercial:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="number" class="form-control" id="valor-comercial">
+                                                <input disabled="disabled" type="number" class="form-control input-sm" id="valor-comercial">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="valor-monte" class="col-sm-4 col-form-label">Valor monte:</label>
                                             <div class="col-sm-8">
-                                                <input disabled="disabled" type="number" class="form-control" id="valor-monte">
+                                                <input disabled="disabled" type="number" class="form-control input-sm" id="valor-monte">
                                             </div>
                                         </div>
                                     </div>
@@ -382,7 +387,7 @@
                                         <div class="form-group row">
                                             <label for="descripcion-partida" class="col-sm-2 col-form-label">Descripción de la partida:</label>
                                             <div class="col-sm-10">
-                                                <textarea disabled="disabled" name="" id="descripcion-partida" cols="30" rows="4" class="form-control"></textarea>
+                                                <textarea disabled="disabled" name="" id="descripcion-partida" cols="30" rows="4" class="form-control input-sm"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -402,14 +407,14 @@
                                         <div class="form-group row">
                                             <label for="coincide-descripcion" class="col-sm-4 col-form-label">Coincide descripción:</label>
                                             <div class="col-sm-8">
-                                                <select name="coincide-descripcion" id="coincide-descripcion" class="form-control"></select>
+                                                <select name="coincide-descripcion" id="coincide-descripcion" class="form-control input-sm"></select>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="coincide-peso" class="col-sm-4 col-form-label">Peso coincide:</label>
                                             <div class="col-sm-8">
-                                                <select name="coincide-peso" id="coincide-peso" class="form-control"></select>
+                                                <select name="coincide-peso" id="coincide-peso" class="form-control input-sm"></select>
                                             </div>
                                         </div>
                                     </div>
@@ -418,14 +423,14 @@
                                         <div class="form-group row">
                                             <label for="descripcion" class="col-sm-4 col-form-label">Descripción:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="descripcion" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="descripcion" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="peso" class="col-sm-4 col-form-label">Peso:</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="peso" placeholder="">
+                                                <input type="text" class="form-control input-sm" id="peso" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -444,7 +449,7 @@
                                         <div class="form-group row">
                                             <label for="observacion" class="col-sm-4 col-form-label">Tipo de Observación:</label>
                                             <div class="col-sm-8">
-                                                <select name="coincide-descripcion" id="observacion" class="form-control"></select>
+                                                <select name="coincide-descripcion" id="observacion" class="form-control input-sm"></select>
                                             </div>
                                         </div>
                                     </div>
@@ -453,7 +458,7 @@
                                         <div class="form-group row">
                                             <label for="apertura" class="col-sm-6 col-form-label">Requiere apertura de caja:</label>
                                             <div class="col-sm-5">
-                                                <input type="checkbox" class="form-control" id="apertura" placeholder="">
+                                                <input type="checkbox" class="form-control input-sm" id="apertura" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -464,7 +469,7 @@
                                         <div class="form-group row">
                                             <label for="observacion-auditoria" class="col-sm-2 col-form-label">Observaciones auditoría:</label>
                                             <div class="col-sm-10">
-                                                <textarea name="" id="observacion-auditoria" cols="30" rows="4" class="form-control"></textarea>
+                                                <textarea name="" id="observacion-auditoria" cols="30" rows="4" class="form-control input-sm"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -475,7 +480,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="pull-right">
-                                            <button class="btn btn-primary">Guardar</button>
+                                            <button class="btn btn-primary btn-sm">Guardar</button>
                                         </div>
                                     </div>
                                 </div>                                

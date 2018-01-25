@@ -39,6 +39,7 @@
     <!-- Estilos temporales -->
     <style>
         label{
+            text-align: right;
             padding-top: 5px;
         }
 
@@ -47,12 +48,12 @@
             margin: 0;
         }
 
-        table{
-            margin-top: 20px;
-        }
-
         th, td{
             text-align: center;
+        }
+
+        label, p, table{
+            font-size: 12px;            
         }
     </style>
 
@@ -183,7 +184,7 @@
                     <form action="?">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Criterios de Búsqueda
+                                <p>Criterios de Búsqueda</p>
                             </div>
                             <div class="panel-body">
                                 <div class="row">
@@ -191,7 +192,7 @@
                                             <div class="form-group row">
                                                 <label for="caja" class="col-sm-4 col-form-label">Número de caja:</label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" class="form-control" id="caja" placeholder="123125">
+                                                    <input type="text" class="form-control input-sm" id="caja" placeholder="123125">
                                                 </div>
                                             </div>
                                     </div>
@@ -200,7 +201,7 @@
                                             <div class="form-group row">
                                                 <label for="partida" class="col-sm-4 col-form-label">Número de partida:</label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" class="form-control" id="partida" placeholder="6874560982">
+                                                    <input type="text" class="form-control input-sm" id="partida" placeholder="6874560982">
                                                 </div>
                                             </div>
                                     </div>
@@ -213,9 +214,9 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="pull-right">                                    
-                                            <button type="button" class="btn btn-success btn-outline">Actualizar</button>
-                                            <button type="button" class="btn btn-success btn-outline">Imprimir lista</button>
-                                            <button type="button" class="btn btn-primary">Ejecutar salida</button>
+                                            <button type="button" class="btn btn-sm btn-success btn-outline">Actualizar</button>
+                                            <button type="button" class="btn btn-sm btn-success btn-outline">Imprimir lista</button>
+                                            <button type="button" class="btn btn-sm btn-primary">Ejecutar salida</button>
                                         </div>
                                     </div>
                                 </div>
@@ -229,7 +230,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
                             <thead>
                                 <tr>
                                     <th>Caja</th>
